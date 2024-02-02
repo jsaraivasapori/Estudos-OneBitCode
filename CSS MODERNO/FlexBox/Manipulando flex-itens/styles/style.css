@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkgray;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+    gap: 0px 15px;
+}
+
+.item{
+    width: 100%;
+    height: 70px;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*flex-basis: 200px ; /*tamanho basico do elemento*/
+    /*flex-grow: 1; /*aumentar os elementos sem quebrar imediatamente*/
+    
+    
+}
+
+.item1{
+   /* flex-shrink: 0; /*Ligado a diminuição dos itens. Esse item1 vai diminuir mais que os outros apos o limite do basis*/
+}
+.item2{
+    /*flex: 1 0 200px /*1 é do flex-grow, o 0 é do flex-shrinl,e o iltimo é p flex-basis*/
+}
+.item3{
+
+}
