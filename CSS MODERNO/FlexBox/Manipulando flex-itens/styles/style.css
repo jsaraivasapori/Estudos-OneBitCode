@@ -11,7 +11,7 @@ body{
 .container{
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     align-items: center;
     justify-content: center;
     /*flex-wrap: wrap;*/
@@ -35,10 +35,22 @@ body{
 
 .item1{
    /* flex-shrink: 0; /*Ligado a diminuição dos itens. Esse item1 vai diminuir mais que os outros apos o limite do basis*/
+    order: 3;/*order muda a ordem*/
+
+    /*Manipulaçao para um elemnto so do container*/
+    /*align-self: flex-end;*/
+    /*align-self: flex-start;*/
 }
 .item2{
     /*flex: 1 0 200px /*1 é do flex-grow, o 0 é do flex-shrinl,e o iltimo é p flex-basis*/
+    /*flex:  1 0 400px;*/
+    order:2;
 }
 .item3{
-
+    order:1;
+}
+@media (max-width: 390px){
+    .item2{
+        flex: 1 0 620px;
+    }
 }
