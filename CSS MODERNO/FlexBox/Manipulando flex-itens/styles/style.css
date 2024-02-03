@@ -42,7 +42,7 @@ body{
     /*align-self: flex-start;*/
 }
 .item2{
-    /*flex: 1 0 200px /*1 é do flex-grow, o 0 é do flex-shrinl,e o iltimo é p flex-basis*/
+    /*flex: 1 0 200px /*1 é do flex-grow, o 0 é do flex-shrinl,e o ultimo é p flex-basis*/
     /*flex:  1 0 400px;*/
     order:2;
 }
