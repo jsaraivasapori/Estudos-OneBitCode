@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: darkgray;
+  min-height: 100vh;
+  display: grid;
+
+  /*##Entendendo as colunas do grid*/
+
+  /*grid-template-columns: 25% 50% 25%; /*três colunas com essas definições. Sempre usar unidades responsivas, evitar PX*/
+  /*grid-template-columns: 1fr 2fr 1fr; /*Pedaço da tela que vc dará para as colunas*/
+  grid-template-columns: repeat(3, 1fr); /*digifica que teremos  colunas cada uma pegando 1 frame, 3 colunas de larguras iguais. Para tamnhos diferentes so com o metodo a cima*/
+
+  /*Entendendo o GAP*/
+  gap: 10px 15px ; /*10px entre as linhas r 15px entre as colunas*/
+
+  /*##Entendendo o grid-template-rows & grid-auto-rows*/
+
+  /*grid-template-rows:1fr 2fr 1fr ; /*a linha do meio vai ficar com 2 frames da tela e as outras linhas somente 1*/
+  /*grid-template-rows: repeat(3,1fr); /*3 linhas de mesma dimensão*/
+
+  grid-auto-rows: minmax((210px,100%)) ; /*210 min e 100% como maximo, ja fica responsivo essas notações*/
+
+
+}
+  .item {
+  border: 2px solid black;
+  background-color: white;
+  font-size: 30px;
+  padding: 10px;
+}
