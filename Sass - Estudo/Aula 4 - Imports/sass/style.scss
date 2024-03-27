@@ -1,0 +1,7 @@
+// Import Colors --> Sempre importar aquilo que é mais usado, pois há hierarquia nos imports
+
+@import "./colors/colors.scss";
+
+//Import Home
+
+@import "./pages/home.scss";
